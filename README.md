@@ -175,13 +175,12 @@ getUserSystemDetails( )
     <h3>user defaults country details from browser</h3>
   
 
-    <script type="module" src="./node_modules/dist/user-detail-from-browser.min.js"></script>
     <script type="module">
       import {
         getUserSystemDetails,
         getUserCountryDetails,
         getUserDetailsFromBrowser,
-      } from "/user-detail-from-browser.min.js";
+      } from "https://unpkg.com/user-detail-from-browser@1.0.0/dist/user-detail-from-browser.min.js";;
   
 
     getUserDetailsFromBrowser();
