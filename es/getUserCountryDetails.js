@@ -17,22 +17,21 @@ const createSystemDetail = localData => {
   return systemDetail;
 };
 const transformCountryDetail = countryDetail => {
-  const phone = {
-    calling_code: countryDetail.phone[0],
-    national_prefix: countryDetail.phone[1],
-    national_number_lengths: countryDetail.phone[2]
-  };
+  let [country_name, country_code_two, country_code_three, phone_code, country_capital, country_currency, currency_name, currency_symbol, tld, region] = countryDetail;
+  if (phone_code) {
+    phone_code = `+${phone_code}`;
+  }
   const finalResultCountryDetails = {
-    country_common_name: countryDetail.name[0],
-    country_official_name: countryDetail.name[1],
-    country_code_two: countryDetail.name[2],
-    country_code_three: countryDetail.name[3],
-    country_capital: countryDetail.capital,
-    country_currency: countryDetail.currency,
-    tld: countryDetail.tld,
-    country_languages: countryDetail.languages,
-    geo: countryDetail.geo,
-    phone
+    country_name,
+    country_code_two,
+    country_code_three,
+    phone_code,
+    country_capital,
+    country_currency,
+    currency_name,
+    currency_symbol,
+    tld,
+    region
   };
   return finalResultCountryDetails;
 };

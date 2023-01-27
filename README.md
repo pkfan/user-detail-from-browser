@@ -2,7 +2,7 @@
 
 See Your Live Data on [https://pkfan.github.io/user-details-from-browser-examples](https://pkfan.github.io/user-details-from-browser-examples/) 
 
-#### Note: Bundle Size is 71.8Kb (gzipped: 18.5k) of this library.
+#### Note: Bundle Size is 34.6Kb (gzipped: 13.4Kb) of this library.
 
 ###### 243 countries supported by this library
    
