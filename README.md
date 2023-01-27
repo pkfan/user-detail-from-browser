@@ -12,8 +12,8 @@ This library does not depend on any third party library and remote service/reque
 
 This library only uses javascript to detect user details and return javascript User Object.    
 
-#### About User Original Details
-**If client use vpn or any third party server, then this library fetch original details of client from browser only, because we fetch details from client system.**   
+## About User Original Details
+**If client use vpn or any third party server or change his country location, then this library fetch/detect original details of client from browser, because we fetch details from client system.**   
 
 
 Following Details are found in result object:   
