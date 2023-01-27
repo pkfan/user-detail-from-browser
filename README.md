@@ -160,7 +160,7 @@ getUserSystemDetails( )
     operating_system: "Windows NT 10.0",
     device_model_name: "x64",
   }
-  
+
 ```
 
 #### index.html : use (user-detail-from-browser.min.js) bundle in your html page with script tags
@@ -180,7 +180,8 @@ getUserSystemDetails( )
         getUserSystemDetails,
         getUserCountryDetails,
         getUserDetailsFromBrowser,
-      } from "https://unpkg.com/user-detail-from-browser@1.0.0/dist/user-detail-from-browser.min.js";;
+      } from "https://unpkg.com/user-detail-from-browser/dist/user-detail-from-browser.min.js";
+
   
 
     getUserDetailsFromBrowser();
