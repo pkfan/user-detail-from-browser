@@ -59,54 +59,51 @@ getUserSystemDetails( )
 
 ### Output of getUserDetailsFromBrowser( )
 ```js
-{
-  country: {
-    country_common_name: "Pakistan",
-    country_official_name: "Islamic Republic of Pakistan",
-    country_code_two: "PK",
-    country_code_three: "PAK",
-    country_capital: "Islamabad",
-    country_currency: { code: "PKR", name: "Pakistan Rupee" },
-    tld: [".pk"],
-    country_languages: { eng: "English", urd: "Urdu" },
-    geo: { region: "Asia", subregion: "Southern Asia" },
-    phone: {
-      calling_code: "+92",
-      national_prefix: "0",
-      national_number_lengths: [9, 10],
-    },
-    country_flag_url:
-      "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pk.svg",
-    locale: "en-US",
-    timeZone: "Asia/Karachi",
-    browser_date: {
-      date_string: "Thu Jan 26 2023",
-      date_numeric: "1/26/2023",
-      system_time: "16:25:44",
-      GMT: "GMT+0500",
-      timezoneOffset: -300,
-    },
-  },
-  system: {
-    network: "4g",
-    RAM: "8 GB",
-    logical_processors: 4,
-    system_selected_language: "en-US",
-    system_languages: ["en-US", "en"],
-    system_date: "1/26/2023",
-    system_time_zone: "Asia/Karachi",
-    system_date_format: {
-      calendar: "gregory",
-      day: "numeric",
-      month: "numeric",
-      year: "numeric",
-    },
-    platform: " Win64",
-    device: "Laptop OR Desktop",
-    operating_system: "Windows NT 10.0",
-    device_model_name: "x64",
-  },
-}
+
+    {
+      country: {
+        country_name: "Pakistan",
+        country_code_two: "PK",
+        country_code_three: "PAK",
+        phone_code: "+92",
+        country_capital: "Islamabad",
+        country_currency: "PKR",
+        currency_name: "Pakistani rupee",
+        currency_symbol: "₨",
+        tld: ".pk",
+        region: "Asia",
+        country_flag_url:
+          "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pk.svg",
+        locale: "en-US",
+        timeZone: "Asia/Karachi",
+        browser_date: {
+          date_string: "Fri Jan 27 2023",
+          date_numeric: "1/27/2023",
+          system_time: "20:49:25",
+          GMT: "GMT+0500",
+          timezoneOffset: -300,
+        },
+      },
+      system: {
+        network: "3g",
+        RAM: "8 GB",
+        logical_processors: 4,
+        system_selected_language: "en-US",
+        system_languages: ["en-US", "en"],
+        system_date: "1/27/2023",
+        system_time_zone: "Asia/Karachi",
+        system_date_format: {
+          calendar: "gregory",
+          day: "numeric",
+          month: "numeric",
+          year: "numeric",
+        },
+        platform: " Win64",
+        device: "Laptop OR Desktop",
+        operating_system: "Windows NT 10.0",
+        device_model_name: "x64",
+      },
+    }
 
 
 ```
@@ -115,44 +112,42 @@ getUserSystemDetails( )
 ### Output of getUserCountryDetails( )
 ```js
 
-  country: {
-    country_common_name: "Pakistan",
-    country_official_name: "Islamic Republic of Pakistan",
-    country_code_two: "PK",
-    country_code_three: "PAK",
-    country_capital: "Islamabad",
-    country_currency: { code: "PKR", name: "Pakistan Rupee" },
-    tld: [".pk"],
-    country_languages: { eng: "English", urd: "Urdu" },
-    geo: { region: "Asia", subregion: "Southern Asia" },
-    phone: {
-      calling_code: "+92",
-      national_prefix: "0",
-      national_number_lengths: [9, 10],
-    },
-    country_flag_url: "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pk.svg",
-    locale: "en-US",
-    timeZone: "Asia/Karachi",
-    browser_date: {
-      date_string: "Thu Jan 26 2023",
-      date_numeric: "1/26/2023",
-      system_time: "16:25:44",
-      GMT: "GMT+0500",
-      timezoneOffset: -300,
+    {
+      country_name: "Pakistan",
+      country_code_two: "PK",
+      country_code_three: "PAK",
+      phone_code: "+92",
+      country_capital: "Islamabad",
+      country_currency: "PKR",
+      currency_name: "Pakistani rupee",
+      currency_symbol: "₨",
+      tld: ".pk",
+      region: "Asia",
+      country_flag_url:
+        "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pk.svg",
+      locale: "en-US",
+      timeZone: "Asia/Karachi",
+      browser_date: {
+        date_string: "Fri Jan 27 2023",
+        date_numeric: "1/27/2023",
+        system_time: "20:49:25",
+        GMT: "GMT+0500",
+        timezoneOffset: -300,
+      },
     }
-  }
+
 ```
 
 ### Output of getUserSystemDetails( )
 ```js
 
-  system: {
-    network: "4g",
+  {
+    network: "3g",
     RAM: "8 GB",
     logical_processors: 4,
     system_selected_language: "en-US",
     system_languages: ["en-US", "en"],
-    system_date: "1/26/2023",
+    system_date: "1/27/2023",
     system_time_zone: "Asia/Karachi",
     system_date_format: {
       calendar: "gregory",
@@ -165,6 +160,7 @@ getUserSystemDetails( )
     operating_system: "Windows NT 10.0",
     device_model_name: "x64",
   }
+  
 ```
 
 #### index.html : use (user-detail-from-browser.min.js) bundle in your html page with script tags
