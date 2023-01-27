@@ -66,9 +66,14 @@ export function getUserCountryDetails() {
 
   const countriesFinalList = getCountriesFinalList()
 
-  let countryDetail = countriesFinalList[browserDetectedRegion] || {}
+  let countryDetail = countriesFinalList[browserDetectedRegion]
 
-  countryDetail = transformCountryDetail(countryDetail)
+  if (countryDetail) {
+    countryDetail = transformCountryDetail(countryDetail)
+  } else {
+    countryDetail = { country_name: "N/A" }
+  }
+
   ////////////////
   if (countryDetail.country_code_two) {
     countryDetail["country_flag_url"] = getUserCountryFlagUrl(

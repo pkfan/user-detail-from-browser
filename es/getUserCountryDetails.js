@@ -40,8 +40,15 @@ export function getUserCountryDetails() {
   const browserDetectedRegion = localData.timeZone.toLowerCase();
   const systemDetail = createSystemDetail(localData);
   const countriesFinalList = getCountriesFinalList();
-  let countryDetail = countriesFinalList[browserDetectedRegion] || {};
-  countryDetail = transformCountryDetail(countryDetail);
+  let countryDetail = countriesFinalList[browserDetectedRegion];
+  if (countryDetail) {
+    countryDetail = transformCountryDetail(countryDetail);
+  } else {
+    countryDetail = {
+      country_name: "N/A"
+    };
+  }
+
   ////////////////
   if (countryDetail.country_code_two) {
     countryDetail["country_flag_url"] = getUserCountryFlagUrl(countryDetail.country_code_two);
