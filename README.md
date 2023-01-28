@@ -1,4 +1,4 @@
-# Get User Location/Country/Details from Browser using javascript
+# Get User Location/IP address/Country/Details from Browser using javascript
 
 See Your Live Data on [https://pkfan.github.io/user-details-from-browser-examples](https://pkfan.github.io/user-details-from-browser-examples/) 
 
