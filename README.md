@@ -48,12 +48,33 @@ import {
   getUserDetailsFromBrowser,
   getUserCountryDetails,
   getUserSystemDetails,
+  getIPs,
 } from "user-detail-from-browser";
 
-
+getSystemIPs( )
 getUserDetailsFromBrowser( )
 getUserCountryDetails( )
 getUserSystemDetails( )
+
+```
+
+### Output of getIPs( )
+```js
+//get client original IPs addresses in array format;
+  getSystemIPs().then((ips) => {
+    console.log("Client System Public Ips", ips);
+  });
+
+/*
+  // output result
+
+  [ 
+    {
+    "ip_version": "IPv4",
+    "ip_address": "111.119.187.8"
+    } 
+  ]
+*/
 
 ```
 
