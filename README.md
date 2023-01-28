@@ -18,7 +18,7 @@ This library only uses javascript to detect user details and return javascript U
 
 Following Details are found in result object:   
 * user location details
-* user original IPs address (not VPN address)
+* user all IPs address
 * user country names
 * country FLAG url in (.svg) format
 * user currency
@@ -49,7 +49,7 @@ import {
   getUserDetailsFromBrowser,
   getUserCountryDetails,
   getUserSystemDetails,
-  getIPs,
+  getSystemIPs,
 } from "user-detail-from-browser";
 
 getSystemIPs( )
@@ -59,7 +59,7 @@ getUserSystemDetails( )
 
 ```
 
-### Output of getIPs( )
+### Output of getSystemIPs( )
 ```js
 //get client original IPs addresses in array format;
   getSystemIPs().then((ips) => {
