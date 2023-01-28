@@ -18,6 +18,7 @@ This library only uses javascript to detect user details and return javascript U
 
 Following Details are found in result object:   
 * user location details
+* user original IPs address (not VPN address)
 * user country names
 * country FLAG url in (.svg) format
 * user currency
