@@ -2,12 +2,18 @@
 
 See Your Live Data on [https://pkfan.github.io/user-details-from-browser-examples](https://pkfan.github.io/user-details-from-browser-examples/) 
 
-#### Note: Bundle Size is 34.6Kb (gzipped: 13.4Kb) of this library.
+#### Note: Bundle Size is 30.4Kb (gzipped: 12.3Kb) of this library.
 
-###### 243 countries supported by this library
+###### 245 countries supported by this library
    
    
+## Using with forms to set default values
+You can use this library to set default country and phone number code during registration and send request to server to get (states, cities) of users.
+
+You can use this library with [countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database).
+
    
+## About Library details   
 This library does not depend on any third party library and remote service/request to detect user location/country/details. 
 
 This library only uses javascript to detect user details and return javascript User Object.    
@@ -50,12 +56,14 @@ import {
   getUserCountryDetails,
   getUserSystemDetails,
   getSystemIPs,
+  getAllCountries,
 } from "user-detail-from-browser";
 
 getSystemIPs( )
 getUserDetailsFromBrowser( )
 getUserCountryDetails( )
 getUserSystemDetails( )
+getAllCountries( )
 
 ```
 
@@ -88,12 +96,9 @@ getUserSystemDetails( )
         country_code_two: "PK",
         country_code_three: "PAK",
         phone_code: "+92",
-        country_capital: "Islamabad",
         country_currency: "PKR",
-        currency_name: "Pakistani rupee",
         currency_symbol: "₨",
         tld: ".pk",
-        region: "Asia",
         country_flag_url:
           "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pk.svg",
         locale: "en-US",
@@ -139,12 +144,9 @@ getUserSystemDetails( )
       country_code_two: "PK",
       country_code_three: "PAK",
       phone_code: "+92",
-      country_capital: "Islamabad",
       country_currency: "PKR",
-      currency_name: "Pakistani rupee",
       currency_symbol: "₨",
       tld: ".pk",
-      region: "Asia",
       country_flag_url:
         "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pk.svg",
       locale: "en-US",
@@ -182,6 +184,20 @@ getUserSystemDetails( )
     operating_system: "Windows NT 10.0",
     device_model_name: "x64",
   }
+
+```
+### Output of getAllCountries( )
+```js
+
+  [
+    {country 1},
+    {country 2},
+    {country 3},
+
+    .....
+
+    {country 250},
+  ]
 
 ```
 

@@ -4,12 +4,9 @@ const transformCountryDetail = (countryDetail) => {
     country_code_two,
     country_code_three,
     phone_code,
-    country_capital,
     country_currency,
-    currency_name,
     currency_symbol,
     tld,
-    region,
   ] = countryDetail
 
   if (phone_code) {
@@ -21,12 +18,9 @@ const transformCountryDetail = (countryDetail) => {
     country_code_two,
     country_code_three,
     phone_code,
-    country_capital,
     country_currency,
-    currency_name,
     currency_symbol,
     tld,
-    region,
   }
 
   return finalResultCountryDetails

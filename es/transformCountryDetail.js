@@ -1,5 +1,5 @@
 const transformCountryDetail = countryDetail => {
-  let [country_name, country_code_two, country_code_three, phone_code, country_capital, country_currency, currency_name, currency_symbol, tld, region] = countryDetail;
+  let [country_name, country_code_two, country_code_three, phone_code, country_currency, currency_symbol, tld] = countryDetail;
   if (phone_code) {
     phone_code = `+${phone_code}`;
   }
@@ -8,12 +8,9 @@ const transformCountryDetail = countryDetail => {
     country_code_two,
     country_code_three,
     phone_code,
-    country_capital,
     country_currency,
-    currency_name,
     currency_symbol,
-    tld,
-    region
+    tld
   };
   return finalResultCountryDetails;
 };
