@@ -12,6 +12,9 @@ You can use this library to set default country and phone number code during reg
 
 You can use this library with [countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database).
 
+Example of it.   
+![alt text](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibm9Z040IVVwuDXeXihCdsM6g7A2FvKoFmkci6a4t7BpPJdBuw4LgggIX9fP3hDjS31ACyhNaI3kxhzdXm6YQ_98Lyi0f7Qd0PPPNxSoE7umD-wPPgnH_31b3NMHCW3dgmw3ciHOOyAMmkasAtcAF4od_4X6FAnDGBt9j-teDIAe9Ea7w7p-ACYIeYeA/s16000/userDetailfromBrowser.gif)
+
    
 ## About Library details   
 This library does not depend on any third party library and remote service/request to detect user location/country/details. 
